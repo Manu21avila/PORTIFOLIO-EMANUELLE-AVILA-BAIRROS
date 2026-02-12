@@ -18,7 +18,6 @@ Desenvolvimento Front-End
 
 Escrita de código limpo e legível
 
-
 🚀 Acesse o Projeto
 
 🌍 Site publicado
@@ -26,7 +25,6 @@ https://manu21avila.github.io/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS/
 
 📁 Repositório no GitHub
 https://github.com/Manu21avila/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS
-
 
 🛠 Tecnologias Utilizadas
 
@@ -42,17 +40,15 @@ GitHub
 
 GitHub Pages
 
-
 📂 Estrutura do Projeto
 📁 projeto
-  ├── index.html
-  ├── css/
-  ├── js/
-  ├── assets/
-  └── README.md
+├── index.html
+├── css/
+├── js/
+├── assets/
+└── README.md
 
 (A estrutura pode variar conforme a organização do código)
-
 
 ⚙️ Como Executar Localmente
 
@@ -67,7 +63,6 @@ cd PORTIFOLIO-EMANUELLE-AVILA-BAIRROS
 Abra o arquivo:
 
 index.html
-
 
 📈 Aprendizados Desenvolvidos
 
@@ -95,10 +90,8 @@ www.linkedin.com/in/emanuelle-sd-ávila
 💻 GitHub
 https://github.com/Manu21avila
 
-
 📄 Licença
 
 Este projeto foi desenvolvido para fins de portfólio.
-
 
 ⭐ Obrigada por visitar este projeto!
