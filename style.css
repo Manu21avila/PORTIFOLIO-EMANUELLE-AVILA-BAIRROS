@@ -90,6 +90,7 @@ header nav.menu-desktop ul li {
 }
 
 /* ESTILO MENU MOBILE */
+<<<<<<< HEAD
 .menu-desktop{
     display: none;
 }
@@ -101,6 +102,14 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile {
+=======
+.btn-abrir-menu i{
+    color: #a1dcf0;
+    font-size: 40px;
+}
+
+.menu-mobile{
+>>>>>>> escola/main
     background-color: #283641;
     height: 100vh;
     position: fixed;
@@ -112,6 +121,7 @@ header nav.menu-desktop ul li {
     transition: .5s;
 }
 
+<<<<<<< HEAD
 .menu-mobile.abrir-menu {
     width: 70%;
 }
@@ -135,20 +145,54 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a {
+=======
+.menu-mobile.abrir-menu{
+    width: 25%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar{
+    color: #a1dcf0;
+    font-size: 38px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+>>>>>>> escola/main
     color: #fff;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
+<<<<<<< HEAD
     cursor: pointer;
 }
 
 .menu-mobile nav ul li a:hover {
+=======
+}
+
+.menu-mobile nav ul li a:hover{
+>>>>>>> escola/main
     background-color: #a2bcc5;
     color: #000;
 }
 
+<<<<<<< HEAD
 .overlay-menu {
+=======
+.overlay-menu{
+>>>>>>> escola/main
     background-color: #000000df;
     width: 100%;
     height: 100%;
@@ -413,7 +457,10 @@ form input[type=submit] {
     color: #000;
     font-size: 18px;
     font-weight: 800;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> escola/main
 }
 
 /* PÁGINA OBRIGADA */
@@ -539,10 +586,13 @@ form #voltar-topo input:hover {
         font-size: 38px;
     }
 
+<<<<<<< HEAD
     .topo-do-site .txt-topo-site p {
         text-align: left;
     }
 
+=======
+>>>>>>> escola/main
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
@@ -553,12 +603,19 @@ form #voltar-topo input:hover {
     }
 
     .Especialidades .especialidades-box i {
+<<<<<<< HEAD
         padding: 0 40%;
         font-size: 60px;
     }
 
     .Especialidades .especialidades-box h3 {
         padding: 0 38%;
+=======
+        font-size: 60px;
+    }
+    
+    .Especialidades .especialidades-box h3 {
+>>>>>>> escola/main
         font-size: 23px;
     }
 
@@ -570,6 +627,7 @@ form #voltar-topo input:hover {
     .sobre .txt-sobre h2 {
         font-size: 34px;
         line-height: 35px;
+<<<<<<< HEAD
         text-align: left;
     }
 
@@ -577,6 +635,9 @@ form #voltar-topo input:hover {
         margin: 20px 0;
         text-align: left;
         font-size: 20px;
+=======
+        text-align: center;
+>>>>>>> escola/main
     }
 
     .btn-social {
@@ -620,9 +681,12 @@ form #voltar-topo input:hover {
     footer .line-footer {
         text-align: center;
     }
+<<<<<<< HEAD
 
     /* ESTILO DO FORMULÁRIO DE CONTATO */
     .main {
         padding: 90px 8%;
     }
+=======
+>>>>>>> escola/main
 }
