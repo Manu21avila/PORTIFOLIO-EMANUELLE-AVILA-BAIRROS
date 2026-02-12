@@ -1,25 +1,34 @@
-🌐 Portfólio — Sistema de Gerenciamento de Bairros
+🌐 Portfólio — Sistema de Gerenciamento
 
-Projeto desenvolvido com foco em prática de desenvolvimento web e organização de código utilizando Git e GitHub.
-Este sistema demonstra habilidades fundamentais de front-end e versionamento, aplicadas em um cenário de interface web funcional.
+Projeto desenvolvido com foco em prática de desenvolvimento web, organização de código e versionamento utilizando Git e GitHub.
 
-🧩 Sobre o Projeto
+Este sistema simula o gerenciamento de bairros por meio de uma interface web, demonstrando conceitos fundamentais de front-end e boas práticas de estruturação de projeto.
 
-Sistema web simples para gerenciamento e visualização de bairros, permitindo interação do usuário através de uma interface estruturada e estilizada.
+📌 Objetivo
 
-O projeto foi desenvolvido com foco em aprendizado prático de:
+Demonstrar habilidades em:
 
-Manipulação de estrutura HTML
-
-Estilização com CSS
-
-Organização de arquivos
+Estruturação e organização de projetos
 
 Versionamento com Git
 
-Publicação e documentação no GitHub
+Publicação com GitHub Pages
 
-🚀 Tecnologias Utilizadas
+Desenvolvimento Front-End
+
+Escrita de código limpo e legível
+
+
+🚀 Acesse o Projeto
+
+🌍 Site publicado
+https://manu21avila.github.io/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS/
+
+📁 Repositório no GitHub
+https://github.com/Manu21avila/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS
+
+
+🛠 Tecnologias Utilizadas
 
 HTML5
 
@@ -31,55 +40,65 @@ Git
 
 GitHub
 
+GitHub Pages
+
+
 📂 Estrutura do Projeto
+📁 projeto
+  ├── index.html
+  ├── css/
+  ├── js/
+  ├── assets/
+  └── README.md
 
-/css
-/js
-/img
-index.html
-README.md
+(A estrutura pode variar conforme a organização do código)
 
-▶️ Como executar
 
-Clone o repositório:
+⚙️ Como Executar Localmente
+
+Clone o repositório
 
 git clone https://github.com/Manu21avila/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS.git
+
+Acesse a pasta do projeto
+
 cd PORTIFOLIO-EMANUELLE-AVILA-BAIRROS
 
-Abra o arquivo index.html no navegador.
+Abra o arquivo:
 
-🖥️ Preview
+index.html
 
-(Adicione aqui uma imagem do projeto rodando quando tiver o print)
 
-/img/preview.png
+📈 Aprendizados Desenvolvidos
 
-Depois inclua:
+Durante este projeto foram praticados:
 
-🌍 Acesso Online
+Manipulação de estrutura HTML
 
-(Vamos preencher após publicar no GitHub Pages)
+Estilização com CSS
 
-💡 Próximas Melhorias
+Lógica com JavaScript
 
-Tornar layout responsivo para dispositivos móveis
+Organização de arquivos
 
-Refatorar scripts JavaScript
+Uso de commits semânticos
 
-Melhorar acessibilidade
-
-Publicar versão online
-
-Otimização de estrutura CSS
+Deploy de aplicação estática
 
 👩‍💻 Autora
 
-Emanuelle Ávila
+Emanuelle Ávila Bairros
 
 🔗 LinkedIn
 www.linkedin.com/in/emanuelle-sd-ávila
 
-🔗 GitHub
+💻 GitHub
 https://github.com/Manu21avila
+
+
+📄 Licença
+
+Este projeto foi desenvolvido para fins de portfólio.
+
 
 ⭐ Obrigada por visitar este projeto!
