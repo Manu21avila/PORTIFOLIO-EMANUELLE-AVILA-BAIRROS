@@ -62,7 +62,7 @@ nav a:hover {
 .hero-img {
   width: 260px;
   border-radius: 20px;
-  box-shadow: 0 0 25px rgba(59,130,246,0.35);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.35);
 }
 
 /* BOTÃO */
@@ -110,18 +110,18 @@ nav a:hover {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
 }
 
 /* PROJETOS */
 
 .project-card {
-  background: #1f1f1f;
-  border-radius: 14px;
   min-width: 260px;
-  margin-right: 20px;
-  cursor: pointer;
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 16px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -204,153 +204,161 @@ footer {
   }
 }
 
-  /* ================= CARROSSEL PROJETOS ================= */
+/* ================= CARROSSEL PROJETOS ================= */
 
-  .carousel-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+
+  /* esconder barra de scroll */
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* SETAS */
+
+.arrow:hover {
+  background: var(--accent-light);
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: 10px;
+}
+
+/* ================= DOTS DO CARROSSEL ================= */
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.carousel-dots span {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-dots span.active {
+  background: #2563eb;
+  transform: scale(1.3);
+}
+
+/* ================= MODAL ================= */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  color: #111;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  animation: modalPop 0.3s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.close {
+  float: right;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.tech {
+  margin: 12px 0;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@keyframes modalPop {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
   }
-
-  .carousel {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 20px 0;
-
-    /* esconder barra de scroll */
-    scrollbar-width: none;
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
+}
 
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
+/* ===== FORMULÁRIO ===== */
 
-  .project-card {
-    min-width: 260px;
-    background: #ffffff;
-    border: 1px solid var(--border-soft);
-    border-radius: 12px;
-    padding: 16px;
-    transition: 0.3s;
-    cursor: pointer;
-  }
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
-  .project-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
+.contact-form input,
+.contact-form textarea {
+  background: #1f1f1f;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+}
 
-  .project-card:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
-  }
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
 
-  /* SETAS */
-
-  .arrow {
-    background: var(--accent);
-    color: white;
-    border: none;
-    font-size: 26px;
-    padding: 10px 14px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-    z-index: 2;
-  }
-
-  .arrow:hover {
-    background: var(--accent-light);
-  }
-
-  .left {
-    margin-right: 10px;
-  }
-
-  .right {
-    margin-left: 10px;
-  }
-
-  /* ================= DOTS DO CARROSSEL ================= */
-
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 18px;
-  }
-
-  .carousel-dots span {
-    width: 10px;
-    height: 10px;
-    background: #cbd5e1;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .carousel-dots span.active {
-    background: #2563eb;
-    transform: scale(1.3);
-  }
-
-  /* ================= MODAL ================= */
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-content {
-    background: white;
-    color: #111;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 420px;
-    width: 90%;
-    text-align: center;
-    animation: modalPop 0.3s ease;
-  }
-
-  .modal-content img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
-
-  .close {
-    float: right;
-    font-size: 26px;
-    cursor: pointer;
-  }
-
-  .tech {
-    margin: 12px 0;
-    color: #2563eb;
-    font-weight: 600;
-  }
-
-  @keyframes modalPop {
-    from {
-      transform: scale(0.7);
-      opacity: 0;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
 }
