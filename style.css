@@ -1,5 +1,3 @@
-/* ================= RESET ================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -7,40 +5,26 @@
   font-family: Poppins, sans-serif;
 }
 
-/* ================= VARIÁVEIS DE COR ================= */
-
-:root {
-  --bg-main: #f5f6f7;
-  --bg-section: #ffffff;
-  --bg-dark: #000000;
-
-  --text-main: #111111;
-  --text-soft: #555555;
-
-  --accent: #1f3a5f;
-  --accent-light: #2f5d8a;
-
-  --border-soft: #e3e3e3;
-}
-
-/* ================= BASE ================= */
+/* ===== CORES BASE ===== */
 
 body {
-  background: var(--bg-main);
-  color: var(--text-main);
+  background: #111111; /* fundo preto neutro */
+  color: #e5e5e5;
 }
+
+/* CONTAINER */
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header {
-  background: var(--bg-dark);
+  background: #1a1a1a;
   position: sticky;
   top: 0;
   z-index: 99;
@@ -52,32 +36,43 @@ header {
   align-items: center;
 }
 
+/* MENU */
+
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #ffffff;
+  color: #d4d4d4;
   font-weight: 600;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #cfcfcf;
+  color: #3b82f6;
 }
 
-/* ================= HERO ================= */
+/* HERO */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
 
 .hero-img {
-  width: 240px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(59,130,246,0.35);
 }
+
+/* BOTÃO */
 
 .btn {
   display: inline-block;
   margin-top: 20px;
-  background: var(--accent);
+  background: #3b82f6;
   padding: 12px 26px;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -85,101 +80,117 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: var(--accent-light);
-  transform: scale(1.05);
+  transform: scale(1.08);
+  background: #2563eb;
 }
 
-/* ================= SEÇÕES ================= */
-
-section {
-  background: var(--bg-section);
-  border-bottom: 1px solid var(--border-soft);
-}
+/* TITULOS */
 
 .section-title {
   text-align: center;
-  margin-bottom: 30px;
-  color: var(--accent);
+  margin-bottom: 40px;
+  color: #ffffff;
 }
 
-/* ================= CARDS / SKILLS ================= */
+/* CARDS / SKILLS */
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 18px;
+  gap: 20px;
 }
 
 .card {
-  background: #ffffff;
-  padding: 22px;
+  background: #1f1f1f;
+  padding: 30px;
   text-align: center;
-  border-radius: 10px;
-  border: 1px solid var(--border-soft);
+  border-radius: 12px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
 }
 
-/* ================= PROJETOS ================= */
+/* PROJETOS */
 
-.project {
-  max-width: 900px;
-  margin: auto;
+.project-card {
+  background: #1f1f1f;
+  border-radius: 14px;
+  min-width: 260px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.project img {
+.project-card:hover {
+  transform: scale(1.04);
+}
+
+.project-card img {
   width: 100%;
-  max-height: 320px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  border: 1px solid var(--border-soft);
+  border-radius: 14px 14px 0 0;
 }
 
-/* ================= SOBRE ================= */
+/* CARROSSEL */
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.arrow {
+  background: #1f1f1f;
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* SOBRE */
 
 .sobre {
   display: flex;
-  gap: 35px;
+  gap: 40px;
   align-items: center;
 }
 
 .sobre img {
-  width: 220px;
-  border-radius: 12px;
+  width: 240px;
+  border-radius: 14px;
 }
 
-/* ================= SOCIAL ================= */
+/* SOCIAL */
 
 .social {
   text-align: center;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .social a {
   margin: 0 12px;
-  color: var(--accent);
+  color: #d4d4d4;
   transition: 0.3s;
 }
 
 .social a:hover {
-  color: var(--accent-light);
+  color: #3b82f6;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer {
   text-align: center;
-  padding: 25px;
-  background: var(--bg-dark);
-  color: white;
+  padding: 30px;
+  background: #1a1a1a;
+  color: #9ca3af;
 }
 
-/* ================= RESPONSIVO ================= */
+/* RESPONSIVO */
 
 @media (max-width: 768px) {
   .hero {
@@ -191,10 +202,7 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-
-  .hero-img {
-    width: 200px;
-  }
+}
 
   /* ================= CARROSSEL PROJETOS ================= */
 
