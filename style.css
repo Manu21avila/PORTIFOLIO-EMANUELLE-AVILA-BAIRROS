@@ -38,7 +38,7 @@ nav a {
   transition: 0.3s;
 }
 
-nav a:hover .hero {
+nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -119,7 +119,7 @@ nav a:hover .hero {
   transition: 0.3s;
 }
 
-.social a:hover footer {
+footer {
   text-align: center;
   padding: 30px;
   background: #020617;
