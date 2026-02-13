@@ -11,7 +11,7 @@
       content="Portfólio profissional de Emanuelle Ávila Bairros — Analista de Sistemas"
     />
 
-    <link rel="icon" href="img/19-ico.ico" alt="Ícone da marca"/>
+    <link rel="icon" href="img/19-ico.ico" />
 
     <!-- Google Fonts -->
 
@@ -30,9 +30,13 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
 
   <body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
     <header>
       <div class="container nav">
         <h2>Emanuelle Ávila Bairros</h2>
@@ -57,7 +61,7 @@
     <!-- HERO -->
 
     <section id="inicio" class="hero container">
-      <div class="hero-text">
+      <div class="hero-text" data-aos="fade-down">
         <h1>Analista de Sistemas</h1>
         <p>
           Transformando ideias em soluções digitais funcionais e modernas.
@@ -74,7 +78,12 @@
         </a>
       </div>
 
-      <img src="img/20.jpg" class="hero-img" alt="Foto de Emanuelle Ávila" />
+      <img
+        src="img/20.jpg"
+        class="hero-img"
+        data-aos="fade-left"
+        alt="Foto de Emanuelle Ávila"
+      />
     </section>
 
     <!-- SKILLS -->
@@ -83,19 +92,19 @@
       <h2 class="section-title">Skills</h2>
 
       <div class="cards">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Python</div>
-        <div class="card">WordPress</div>
-        <div class="card">E-commerce</div>
+        <div class="card" data-aos="zoom-in">HTML</div>
+        <div class="card" data-aos="zoom-in">CSS</div>
+        <div class="card" data-aos="zoom-in">JavaScript</div>
+        <div class="card" data-aos="zoom-in">Python</div>
+        <div class="card" data-aos="zoom-in">WordPress</div>
+        <div class="card" data-aos="zoom-in">E-commerce</div>
       </div>
     </section>
 
     <!-- SOBRE -->
 
-    <section id="sobre" class="container sobre">
-      <img src="img/10.jpg" alt="Foto de Emanuelle Ávila"/>
+    <section id="sobre" data-aos="fade-up" class="container sobre">
+      <img src="img/10.jpg" alt="Foto de Emanuelle Ávila" />
 
       <div>
         <h2>Sobre mim</h2>
@@ -110,7 +119,7 @@
 
     <!-- PROJETOS -->
 
-    <a href="#projetos">Projetos</a>
+    <section id="projetos">
       <div class="container">
         <h2 class="section-title">Projetos</h2>
 
@@ -133,7 +142,7 @@
                 )
               "
             >
-              <img src="img/18.jpg" alt="Demonstrator Projeto 1"/>
+              <img src="img/18.jpg" alt="Demonstrator Projeto 1" />
               <h3>Sistema de Bairros</h3>
               <p>Ver detalhes</p>
             </div>
@@ -151,7 +160,7 @@
                 )
               "
             >
-              <img src="img/20.jpg" alt="Demonstrator Projeto 2"/>
+              <img src="img/20.jpg" alt="Demonstrator Projeto 2" />
               <h3>Portfólio Web</h3>
               <p>Ver detalhes</p>
             </div>
@@ -169,7 +178,7 @@
                 )
               "
             >
-              <img src="img/10.jpg" alt="Demonstrator Projeto 3"/>
+              <img src="img/10.jpg" alt="Demonstrator Projeto 3" />
               <h3>Projeto Front-End</h3>
               <p>Ver detalhes</p>
             </div>
@@ -202,7 +211,10 @@
         <a href="https://github.com/Manu21avila" target="_blank">
           ><i class="bi bi-github"></i
         ></a>
-        <a href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/"
+          target="_blank"
+        >
           <i class="bi bi-linkedin"></i>
         </a>
         <a href="https://www.instagram.com/manu_avila.21/" target="_blank">
@@ -302,7 +314,7 @@
         if (e.target.id === "projectModal") {
           closeModal();
         }
-      }
+      };
     </script>
 
     <!-- MODAL PROJETOS -->
@@ -335,5 +347,24 @@
 
     <div id="overlay-menu" class="overlay-menu"></div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+      });
+    </script>
+
+    <script>
+      const glow = document.getElementById("cursorGlow");
+
+      document.addEventListener("mousemove", (e) => {
+        glow.style.left = e.clientX + "px";
+        glow.style.top = e.clientY + "px";
+      });
+    </script>
   </body>
 </html>
