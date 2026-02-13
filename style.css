@@ -5,6 +5,10 @@
   font-family: Poppins, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===== CORES BASE ===== */
 
 body {
@@ -151,6 +155,10 @@ nav a:hover {
   border-radius: 10px;
 }
 
+.project-card {
+  flex: 0 0 auto;
+}
+
 /* SOBRE */
 
 .sobre {
@@ -243,7 +251,7 @@ footer {
 /* SETAS */
 
 .arrow:hover {
-  background: var(--accent-light);
+  background: #2563eb;
 }
 
 .left {
@@ -293,8 +301,8 @@ footer {
 }
 
 .modal-content {
-  background: white;
-  color: #111;
+  background: #1f1f1f;
+  color: #e5e5e5;
   padding: 30px;
   border-radius: 12px;
   max-width: 420px;
